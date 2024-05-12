@@ -63,6 +63,8 @@ def auto_sync():
     except KeyError as e:
         return flask.jsonify({"status": False, "message": "error request"}), 400
 
+    time = int(time)
+
     try:
         timestamp, token = login_token.split("-")
     except ValueError as e:

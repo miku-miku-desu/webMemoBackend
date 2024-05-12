@@ -35,6 +35,8 @@ class Sync:
     def auto_update(self, memo_content: str, time: int):
         if self.memo.update_time < time:
             return self.toRemote(memo_content, time)
+        elif self.memo.update_time == time:
+            return True
         else:
             return self.toLocal()
 
