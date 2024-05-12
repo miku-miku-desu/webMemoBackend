@@ -1,0 +1,11 @@
+{
+  "db_connect_info": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "miku",
+    "password": "mikumiku520"
+  },
+  "db_name": "memo",
+  "endpoint": "/api/",
+  "can_register": true
+}
